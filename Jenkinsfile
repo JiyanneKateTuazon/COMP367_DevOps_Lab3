@@ -24,7 +24,7 @@ pipeline {
             steps {
                 sh 'docker stop lab3app-container || true'
                 sh 'docker rm lab3app-container || true'
-                sh 'docker run -d -p 8081:8080 --name lab3app-container lab3app'
+                sh 'docker run -d -p 8090:8080 --name lab3app-container lab3app'
             }
         }
     }
